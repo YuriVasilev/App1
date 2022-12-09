@@ -54,17 +54,20 @@
 
         <EditText
             android:id="@+id/editTextTextEmailAddress"
-            android:hint="@string/username"
             style="@style/edit_text_style"
-            android:autofillHints="emailAddress" />
+            android:autofillHints="emailAddress"
+            android:clickable="true"
+            android:hint="@string/username"
+            tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
 
         <EditText
             android:id="@+id/editTextTextPassword"
-            android:inputType="textPassword"
-            android:hint="@string/password"
-            android:minHeight="48dp"
             style="@style/edit_text_style"
-            android:autofillHints="newPassword" />
+            android:autofillHints="newPassword"
+            android:clickable="true"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
 
         <TextView
             android:id="@+id/textView3"
@@ -72,9 +75,10 @@
             android:layout_height="wrap_content"
             android:layout_gravity="end"
             android:layout_marginBottom="32dp"
+            android:clickable="true"
             android:text="@string/forget_your_password"
             android:textColor="@color/teal_200"
-            tools:ignore="TextContrastCheck" />
+            tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
 
         <Button
             android:id="@+id/button"
@@ -82,6 +86,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="32dp"
             android:background="@drawable/login_button_background"
+            android:clickable="true"
             android:text="@string/login"
             tools:ignore="DuplicateSpeakableTextCheck" />
 
@@ -89,8 +94,9 @@
             android:id="@+id/textView4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:clickable="true"
             android:text="@string/don_t_have_an_account_sign_up"
             android:textColor="@color/teal_200"
-            tools:ignore="TextContrastCheck" />
+            tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
